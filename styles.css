@@ -1,0 +1,13 @@
+body {
+  font-family: 'Biryani', sans-serif;
+}
+nav {
+  position: relative;
+}
+.balancing {
+  position: relative;
+}
+.icon img {
+   width: 30px;
+   height: 45px;
+ }
