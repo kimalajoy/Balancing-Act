@@ -1,13 +1,103 @@
 body {
   font-family: 'Biryani', sans-serif;
+  color: #363636;
+  background-color:#F5F5F5;
 }
 nav {
-  position: relative;
+  position: absolute;
+  background: #fff;
+  height: 100vh;
 }
-.balancing {
-  position: relative;
+button  {
+  background-color: #1CA3BA;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+h4, h6 {
+  display: block;
+  padding-left: 8%;
+}
+.income {
+  display: block;
+  width: 200px;
+}
+.container {
+  display: inline-block;
+  background: #fff;
+  margin: 10px;
+
 }
 .icon img {
    width: 30px;
    height: 45px;
  }
+ul {
+  list-style: none;
+}
+.balancing {
+  position: relative;
+  left:100px;
+}
+.accounts {
+  float: left;
+  position: relative;
+  left:100px;
+  top: 150px;
+}
+.recent {
+  float: right;
+  position: relative;
+}
+.expenses {
+}
+.credit {
+}
+.gradient {
+  background-image: linear-gradient(to right, #8ED1DC , #E3F4F6);
+  width: 660px;
+  height: 100px;
+}
+.card {
+  display: block;
+  position: absolute;
+}
+.accounts {
+  display: inline;
+  position: relative;
+}
+.recent {
+  display: block;
+  position: relative;
+}
+h3 {
+  padding-top: 40px;
+}
+.x {
+  height: 20px;
+  width: 20px
+}
+.checkbook {
+  height: 50px;
+  width: 50px;
+}
+.savings {
+  height: 50px;
+  width: 50px
+}
+.amazon {
+  height: 50px;
+  width: 50px
+}
+.south {
+  height: 50px;
+  width: 50px
+}
+#elephant {
+  padding-bottom: 30px;
+  height: 50px;
+  width: 50px
+}
+.container .accounts {
+  display: inline;
+}
