@@ -1,141 +1,147 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Biryani" rel="stylesheet">
-    <title>Balancing Act</title>
-  </head>
-  <body>
-    <div>
-    <nav class="icon">
-      <ul>
-      <li><img src="assets/elephant.svg" alt="Elephant on globe"  id="elephant"></li>
-      <li><img src="assets/dashboard.svg" alt="medical chart"></li>
-      <li><img src="assets/transactions.svg" alt="wallet with credit card"></li>
-      <li><img src="assets/profile.svg" alt="profile"></li>
-      </ul>
-    </nav>
-    <div>
-  <section class="balancing">
+
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Biryani" rel="stylesheet">
+  <title>Balancing Act</title>
+</head>
+
+<body>
+
+  <nav>
+    <ul>
+      <li><img class="icon" src="assets/elephant.svg" alt="Elephant on globe" id="elephant"></li>
+      <li><img class="icon" src="assets/dashboard.svg" alt="medical chart"></li>
+      <li><img class="icon" src="assets/transactions.svg" alt="wallet with credit card"></li>
+      <li><img class="icon" src="assets/profile.svg" alt="profile"></li>
+    </ul>
+  </nav>
+  <div class="balancing">
     <h1>Balancing Act</h1>
-    <div class="gradient">
-      <h3>Welcome, Oscar!</h3>
-      <img class="x" src="assets/close.svg" alt="close button">
-    </div>
-      <div class="card">
-        <div class="income container">
-          <h6 class="income">INCOME</h6>
-          <h4 class="income">$2,119.12</h4>
+
+    <div class="main">
+      <div class="welcome">
+        <h3>Welcome, Oscar!</h3>
+        <img class="close" src="assets/close.svg" alt="close button">
+      </div>
+      <div class="container col-3">
+        <div class="card">
+          <h6>INCOME</h6>
+          <h4>$2,119.12</h4>
         </div>
-        <div class="income container">
-          <h6 class="expenses">EXPENSES</h6>
-          <h4 class="expenses">$420.54</h4>
+        <div class="card">
+          <h6>EXPENSES</h6>
+          <h4>$420.54</h4>
+        </div>
+        <div class="card">
+          <h6>CREDIT SCORE</h6>
+          <h4>673</h4>
+        </div>
       </div>
-      <div class="income container">
-        <h6 class="credit">CREDIT SCORE</h6>
-        <h4 class="credit">673</h4>
+
+      <div class="accounts">
+        <div class="accounts-header">
+          <h2>Accounts</h2>
+          <button class="manage" type="button" name="MANAGE">MANAGE ACCOUNTS</button>
+        </div>
+        <div>
+          <div class="card">
+            <img src="assets/checking.svg" alt="Checkbook">
+            <h3>Wells Fargo</h3>
+            <h3>Checking</h3>
+          </div>
+          <div class="card">
+            <img src="assets/savings.svg" alt="savings">
+            <h3>Wells Fargo</h3>
+            <h3>Savings</h3>
+          </div>
+          <div class="card">
+            <img src="assets/credit-card.svg" alt="credit card">
+            <h3>Amazon Credit</h3>
+            <h3>Credit Card</h3>
+          </div>
+          <div class="card">
+            <img src="assets/credit-card.svg" alt="credit card">
+            <h3>Southwest Credit</h3>
+            <h3>Credit Card</h3>
+          </div>
+        </div>
       </div>
+    </div>
+
+    <div class="transactions">
+      <div class="transactions-header">
+        <h2>Recent Transactions</h2>
+        <button class="new" type="button" name="NEW">NEW TRANSACTION</button>
       </div>
-  </section>
+      <table class="table">
+        <thead>
+          <th>Date</th>
+          <th>Payee</th>
+          <th>Inflow</th>
+          <th>Outflow</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Oct 25, 2019</td>
+            <td>Target</td>
+            <td>-</td>
+            <td>$82.35</td>
+          </tr>
+          <tr>
+            <td>Oct 24, 2019</td>
+            <td>Express</td>
+            <td>-</td>
+            <td>$212.24</td>
+          </tr>
+          <tr>
+            <td>Oct 22, 2019</td>
+            <td>Paycheck</td>
+            <td>$1,319.12</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Oct 21, 2019</td>
+            <td>Trader Joe's</td>
+            <td>-</td>
+            <td>$54.92</td>
+          </tr>
+          <tr>
+            <td>Oct 20, 2019</td>
+            <td>Shell</td>
+            <td>-</td>
+            <td>$46.23</td>
+          </tr>
+          <tr>
+            <td>Oct 19, 2019</td>
+            <td>Rent</td>
+            <td>$800.00</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Oct 19, 2019</td>
+            <td>Hapa Sushi</td>
+            <td>-</td>
+            <td>$13.97</td>
+          </tr>
+          <tr>
+            <td>Oct 18, 2019</td>
+            <td>Pig Train</td>
+            <td>-</td>
+            <td>$4.83</td>
+          </tr>
+          <tr>
+            <td>ct 18, 2019</td>
+            <td>RTD</td>
+            <td>-</td>
+            <td>$6.00</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
-  <div class="accounts">
-  <div>
-<h2>Accounts</h2>
-  <button class="manage" type="button" name="MANAGE">MANAGE ACCOUNTS</button>
-</div>
-<div class="manage">
-<div class="container check">
-  <img class="checkbook" src="assets/checking.svg" alt="Checkbook">
-  <h3 class="credit">Wells Fargo</h3>
-  <h3 class="credit">Checking</h3>
-</div>
-<div class="container">
-  <img class="savings" src="assets/savings.svg" alt="savings">
-  <h3 class="credit">Wells Fargo</h3>
-  <h3 class="credit">Savings</h3>
-</div>
-<div class="container">
-  <img class="amazon" src="assets/credit-card.svg" alt="credit card">
-  <h3 class="credit">Amazon Credit</h3>
-  <h3 class="credit">Credit Card</h3>
-</div>
-<div class="container">
-  <img class="south" src="assets/credit-card.svg" alt="credit card">
-  <h3 class="credit">Southwest Credit</h3>
-  <h3 class="credit">Credit Card</h3>
-</div>
-</div>
-</div>
-</div>
-<div class="recent">
-  <table class="table">
-    <div>
-      <h2>Recent Transactions</h2>
-      <button class="new" type="button" name="NEW">NEW TRANSACTION</button>
-  </div>
-  <thead>
-    <th>Date</th>
-    <th>Payee</th>
-    <th>Inflow</th>
-    <th>Outflow</th>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Oct 25, 2019</td>
-      <td>Target</td>
-      <td>-</td>
-      <td>$82.35</td>
-    </tr>
-    <tr>
-      <td>Oct 24, 2019</td>
-      <td>Express</td>
-      <td>-</td>
-      <td>$212.24</td>
-    </tr>
-    <tr>
-      <td>Oct 22, 2019</td>
-      <td>Paycheck</td>
-      <td>$1,319.12</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>Oct 21, 2019</td>
-      <td>Trader Joe's</td>
-      <td>-</td>
-      <td>$54.92</td>
-    </tr>
-    <tr>
-      <td>Oct 20, 2019</td>
-      <td>Shell</td>
-      <td>-</td>
-      <td>$46.23</td>
-    </tr>
-    <tr>
-      <td>Oct 19, 2019</td>
-      <td>Rent</td>
-      <td>$800.00</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>Oct 19, 2019</td>
-      <td>Hapa Sushi</td>
-      <td>-</td>
-      <td>$13.97</td>
-    </tr>
-    <tr>
-      <td>Oct 18, 2019</td>
-      <td>Pig Train</td>
-      <td>-</td>
-      <td>$4.83</td>
-    </tr>
-    <tr>
-      <td>ct 18, 2019</td>
-      <td>RTD</td>
-      <td>-</td>
-      <td>$6.00</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-  </body>
+
+</body>
+
 </html>

@@ -3,119 +3,107 @@ body {
   color: #363636;
   background-color:#F5F5F5;
 }
-nav {
-  position: absolute;
-  background: #fff;
-  height: 100vh;
-}
 button  {
   background-color: #1CA3BA;
   color: #fff;
   padding: 10px;
   border-radius: 10px;
 }
-h4, h6 {
-  display: block;
-  padding-left: 8%;
-}
-.income {
-  display: block;
-  width: 200px;
-}
-.container .manage {
-  /* grid-row: auto; */
-  width: 33%;
-}
-.container {
-  display: inline-block;
-  background: #fff;
-  margin: 10px;
-}
-.container .check {
-grid-row: auto;
-}
-.check {
-grid-row: auto;
-}
-.icon img {
-   width: 30px;
-   height: 45px;
- }
 ul {
   list-style: none;
 }
-.balancing {
-  position: relative;
-  left:100px;
-}
-.accounts {
-  float: left;
-  position: relative;
-  left:100px;
-  top: 150px;
-}
-.recent {
-  float: right;
-  overflow: auto
-  /* position: relative; */
-  /* position: absolute; right: 200px; */
-}
-.expenses {
-}
-.credit {
-  display: inline-block;
-}
-.gradient {
-  background-image: linear-gradient(to right, #8ED1DC , #E3F4F6);
-  width: 660px;
-  height: 100px;
-}
-.card {
-  display: block;
-  position: absolute;
-}
-.accounts {
-  display: inline;
-  position: relative;
-}
-.recent {
-  display: block;
-  position: relative;
-  clear: inherit;
-}
-/* Moves Welcome, Oscar to the middle(ish) of the blue bar */
-h3 {
-  padding-top: 20px;
-  /* position absolute fixes the placement of the X image but effs up the way the things in account look */
-  /* position: absolute; */
-}
-.x {
-  height: 20px;
-  width: 20px;
-  float: right;
-  position: relative;
-}
-.checkbook {
-  height: 50px;
-  width: 50px;
-}
-.savings {
-  height: 50px;
-  width: 50px
-}
-.amazon {
-  height: 50px;
-  width: 50px
-}
-.south {
-  height: 50px;
-  width: 50px
-}
+
 #elephant {
   padding-bottom: 30px;
   height: 50px;
   width: 50px
 }
-/* .container .accounts {
+
+nav {
+  float: left;
+  width: 3%;
+  background: #fff;
+  height: 100vh;
+}
+nav img.icon {
+  width: 30px;
+  text-align: center;
+}
+nav > ul {
+  padding-left: 0px;
+}
+.balancing {
+  float: right;
+  width: 93%;
+  padding: 10px;
+}
+
+.main {
+  margin: 20px;
+  float: left;
+  width: 45%;
+}
+
+.transactions {
+  margin: 20px;
+  float: right;
+  width: 45%;
+  background: #fff;
+}
+
+.welcome {
+  background-image: linear-gradient(to right, #8ED1DC , #E3F4F6);
+  height: 100px;
+}
+.welcome h3 {
+  padding-top: 20px;
+  margin-left: 10px;
+  position: absolute;
+}
+.welcome .close {
+  margin: 10px;
+  width: 10px;
+  float: right;
+  position: relative;
+}
+
+.container {
+  display: inline-block;
+  width: 100%;
+}
+.card {
+  padding: 10px;
+  display: inline-block;
+  background: #fff;
+}
+
+.container.col-3 > .card {
+  width: 28%;
+}
+.accounts-header > h2 {
+  float:left;
+}
+.accounts-header > button {
+  float:right;
+  margin: 20px 0px;
+}
+.accounts .card {
+  width: 100%;
+  margin-top: 10px;
+}
+.accounts .card > img {
+  height: 50px;
   display: inline;
-} */
+}
+.accounts .card > h3 {
+  display: inline;
+  margin-left: 70px;
+}
+
+.transactions-header > h2 {
+  float:left;
+}
+.transactions-header > button {
+  float:right;
+  margin: 20px 0px;
+}
