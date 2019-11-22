@@ -56,12 +56,14 @@ ul {
 }
 .recent {
   float: right;
+  overflow: auto
   /* position: relative; */
   /* position: absolute; right: 200px; */
 }
 .expenses {
 }
 .credit {
+  display: inline-block;
 }
 .gradient {
   background-image: linear-gradient(to right, #8ED1DC , #E3F4F6);
@@ -83,8 +85,9 @@ ul {
 }
 /* Moves Welcome, Oscar to the middle(ish) of the blue bar */
 h3 {
-  padding-top: 40px;
-  position: absolute;
+  padding-top: 20px;
+  /* position absolute fixes the placement of the X image but effs up the way the things in account look */
+  /* position: absolute; */
 }
 .x {
   height: 20px;
@@ -113,6 +116,6 @@ h3 {
   height: 50px;
   width: 50px
 }
-.container .accounts {
+/* .container .accounts {
   display: inline;
-}
+} */
