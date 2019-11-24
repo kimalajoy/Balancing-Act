@@ -6,24 +6,26 @@ function closeWelcome() {
   this.parentNode.remove();
 }
 
-var cow = document.querySelector('.icon.chart');
+var icons = document.querySelectorAll('.icon');
 
-cow.addEventListener('mouseover', hover);
-cow.addEventListener('mouseout', hoverLeave);
+// icons[1].addEventListener('click', click);
+// icons[2].addEventListener('click', click);
+// icons[3].addEventListener('click', click);
+for(let i=1;i<icons.length;i++){
+  // icons[i].addEventListener('mouseover', hover);
+  icons[i].addEventListener('click', click);
+  // icons[i].addEventListener('mouseout', hoverLeave);
+}
 
-var taco = document.querySelector('.icon.wallet');
-
-taco.addEventListener('mouseover', hover);
-taco.addEventListener('mouseout', hoverLeave);
 
 function hover(color) {
-  this.style.borderLeft = '4px solid #1CA3BA';
+  this.classList.add("active");
 }
 function hoverLeave(color) {
-  this.style.borderLeft = '#fff';
+  this.classList.remove("active");
 }
 
-var beans = document.querySelector('.icon.profile');
-
-beans.addEventListener('mouseover', hover);
-beans.addEventListener('mouseout', hoverLeave);
+function click() {
+  document.querySelector('.icon.active').classList.remove('active');
+  this.classList.add('active');
+}

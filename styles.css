@@ -31,10 +31,14 @@ nav img.icon {
   width: 30px;
   text-align: center;
 }
+nav img.icon.active {
+  border-left: 4px solid #1CA3BA;
+}
+
 nav > ul {
   padding-left: 0px;
 }
-.balancing {
+.main {
   float: right;
   width: 93%;
   padding: 10px;
@@ -45,8 +49,14 @@ nav > ul {
   float: left;
   width: 45%;
 }
+.section.active {
+  visibility: visible;
+}
+.section {
+  visibility: hidden;
+}
 
-.transactions {
+.recent-transactions {
   margin: 20px;
   float: right;
   width: 45%;
@@ -98,16 +108,16 @@ nav > ul {
   margin-left: 70px;
 }
 
-.transactions-header {
+.recent-transactions-header {
   margin: 10px;
 }
-.transactions-header > h2 {
+.recent-transactions-header > h2 {
   float:left;
 }
-.transactions table {
+.recent-transactions table {
   width: 100%;
   border-collapse: collapse;
 }
-.transactions table tr {
+.recent-transactions table tr {
   border-bottom: 1px solid #ddd;
 }
