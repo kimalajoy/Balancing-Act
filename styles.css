@@ -3,11 +3,13 @@ body {
   color: #363636;
   background-color:#F5F5F5;
 }
-button  {
+button.action  {
   background-color: #1CA3BA;
   color: #fff;
   padding: 10px;
   border-radius: 10px;
+  float:right;
+  margin: 20px 0px;
 }
 ul {
   list-style: none;
@@ -83,10 +85,6 @@ nav > ul {
 .accounts-header > h2 {
   float:left;
 }
-.accounts-header > button {
-  float:right;
-  margin: 20px 0px;
-}
 .accounts .card {
   width: 100%;
   margin-top: 10px;
@@ -100,10 +98,16 @@ nav > ul {
   margin-left: 70px;
 }
 
+.transactions-header {
+  margin: 10px;
+}
 .transactions-header > h2 {
   float:left;
 }
-.transactions-header > button {
-  float:right;
-  margin: 20px 0px;
+.transactions table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.transactions table tr {
+  border-bottom: 1px solid #ddd;
 }
