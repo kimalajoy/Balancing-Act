@@ -28,4 +28,21 @@ function hoverLeave(color) {
 function click() {
   document.querySelector('.icon.active').classList.remove('active');
   this.classList.add('active');
+
+  var sectionName = this.getAttribute('section');
+  if(sectionName != null){
+    return;
+  }
+
+  document.querySelector('.section.active').classList.remove('active');
+  document.querySelector(`.${sectionName}`).classList.add('active');
+
+  // this.classList.hide('.dashboard-main.section.active');
 }
+
+// function hide () {
+//   var soda = document.querySelector('.dashboard-main.section.active');
+//
+//   // addEventListener('click', '.icon.wallet')
+//
+// }

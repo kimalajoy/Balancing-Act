@@ -50,10 +50,10 @@ nav > ul {
   width: 45%;
 }
 .section.active {
-  visibility: visible;
+  display: block;
 }
 .section {
-  visibility: hidden;
+  display: none;
 }
 
 .recent-transactions {
