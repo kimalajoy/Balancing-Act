@@ -30,7 +30,7 @@ function click() {
   this.classList.add('active');
 
   var sectionName = this.getAttribute('section');
-  if(sectionName == null){
+    if(sectionName == null){
     return;
   }
 
