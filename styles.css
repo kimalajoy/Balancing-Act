@@ -14,15 +14,12 @@ button.action  {
 ul {
   list-style: none;
 }
-.action.all {
-  display: inline;
-}
+
 #elephant {
   padding-bottom: 30px;
   height: 50px;
   width: 50px
 }
-
 nav {
   float: left;
   width: 3%;
@@ -40,17 +37,21 @@ nav img.icon.active {
 nav > ul {
   padding-left: 0px;
 }
+label {
+  display: block;
+}
+
 .main {
   float: right;
   width: 93%;
   padding: 10px;
 }
 
-.main {
+/* .main {
   margin: 20px;
   float: left;
   width: 45%;
-}
+} */
 .section.active {
   display: block;
 }
@@ -65,7 +66,7 @@ nav > ul {
 }
 .new-transactions {
   margin: 20px;
-  float: right;
+  /* float: right; */
   /* width: 45%; */
   background: #fff;
 }
@@ -128,8 +129,8 @@ nav > ul {
   border-bottom: 1px solid #ddd;
 }
 .new-transactions table {
-  width: 100%;
-  border-collapse: collapse;
+  /* width: 45px; */
+  /* border-collapse: collapse; */
   float: left;
 }
 .new-transactions table tr {
@@ -140,6 +141,23 @@ nav > ul {
   width: 175px;
   background-color: #fff;
 }
-table.new-transactions {
+.new-transactions.form {
+  float: right;
+  width: 45%;
+  padding: 40px;
+}
+.flow {
+    display: inline;
+}
+.float-left {
   float: left;
+  width: 35%;
+}
+.float-right {
+  float:right;
+  margin-right: 700px;
+}
+.new-transactions {
+  width: 35%;
+  padding: 20px;
 }
