@@ -47,11 +47,11 @@ label {
   padding: 10px;
 }
 
-/* .main {
+.dashboard {
   margin: 20px;
   float: left;
   width: 45%;
-} */
+}
 .section.active {
   display: block;
 }
@@ -85,7 +85,6 @@ label {
   float: right;
   position: relative;
 }
-
 .container {
   display: inline-block;
   width: 100%;
@@ -116,38 +115,55 @@ label {
 }
 
 .recent-transactions-header {
-  margin: 10px;
+  margin: 20px;
 }
 .recent-transactions-header > h2 {
   float:left;
 }
 .recent-transactions table {
-  width: 100%;
+  margin: 20px;
+  width: 93%;
   border-collapse: collapse;
 }
 .recent-transactions table tr {
   border-bottom: 1px solid #ddd;
 }
-.new-transactions table {
-  /* width: 45px; */
-  /* border-collapse: collapse; */
+.all-transactions {
   float: left;
 }
-.new-transactions table tr {
-  border-bottom: 1px solid #ddd;
-  float: left;
-}
-.transaction-form {
-  width: 175px;
+.all-transactions-list {
+  padding: 20px;
   background-color: #fff;
+  height: 400px;
+  overflow-y: scroll;
+  float: left;
 }
-.new-transactions.form {
+.all-transactions table {
+  border-collapse: collapse;
+}
+.all-transactions table tr {
+  border-bottom: 1px solid #ddd;
+}
+
+.new-transactions {
   float: right;
-  width: 45%;
-  padding: 40px;
+  width: 40%;
+  padding: 20px;
 }
-.flow {
-    display: inline;
+.new-transactions-header {
+  margin: 0 auto;
+  text-align: center;
+}
+.new-transactions-form {
+  margin: 0 auto;
+  width: 80%;
+}
+.new-transactions-input {
+  width: 100%;
+}
+
+.all-transactions-header {
+    clear: both;
 }
 .float-left {
   float: left;
@@ -155,9 +171,4 @@ label {
 }
 .float-right {
   float:right;
-  margin-right: 700px;
-}
-.new-transactions {
-  width: 35%;
-  padding: 20px;
 }

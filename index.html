@@ -18,7 +18,7 @@
     </ul>
   </nav>
   <div class="main">
-  <div class="dashboard-main section active">
+  <div class="section active dashboard-main">
     <h1>Balancing Act</h1>
 
     <div class="dashboard">
@@ -133,7 +133,7 @@
             <td>$4.83</td>
           </tr>
           <tr>
-            <td>ct 18, 2019</td>
+            <td>Oct 18, 2019</td>
             <td>RTD</td>
             <td>-</td>
             <td>$6.00</td>
@@ -143,12 +143,9 @@
     </div>
   </div>
 
-  <div class="transactions-main section">
-    <div class="">
-
-
-
-      <div class="flow">
+  <div class="section transactions-main">
+    <div class="all-transactions">
+      <div class="all-transactions-header">
         <div class="float-left">
           <h1 class="">Transactions</h1>
         </div>
@@ -158,9 +155,9 @@
           <button class="action" type="button" name="button">Outflow</button>
         </div>
       </div>
-    </div>
-    <div class="table">
-      <table class="new-transactions">
+
+      <div class="all-transactions-list">
+      <table>
         <thead>
           <th>Date</th>
           <th>Account</th>
@@ -267,26 +264,37 @@
             <td>-</td>
             <td>$212.24</td>
           </tr>
+        </table>
+      </div>
     </div>
 
+    <div class="new-transactions">
+      <h1 class="new-transactions-header">New Transaction</h1>
+      <div class="new-transactions-form">
+        <label for="">Type of Transaction:</label>
+        <select class="new-transactions-input" name="">
+          <option value="Expense">Expense</option>
+        </select>
+        <label for="">Category:</label>
+        <select class="new-transactions-input" name="">
+          <option value="">- Select One -</option>
+        </select>
+        <label for="">Account From:</label>
+        <select class="new-transactions-input" name="">
+          <option value="">- Select One -</option>
+        </select>
+        <label for="">Payee:</label>
+        <input type="text" name="" class="new-transactions-input" value=""></>
+        <label for="">Outflow:</label>
+        <input type="text" name="" class="new-transactions-input" value=""></>
+        <label for="">Category:</label>
+        <input type="text" name="" class="new-transactions-input" value=""></>
+        <button class="action" type="button" name="button">Log Expense</button>
+      </div>
+    </div>
   </div>
-<div class="new-transactions form">
-  <h1 class="new">New Transaction</h1>
-  <label for="">Type of Transaction:</label>
-  <select class="transaction-form" name="">Expense</select>
-  <label for="">Category:</label>
-  <select class="transaction-form" name=""></select>
-  <label for="">Account From:</label>
-  <select class="transaction-form" name=""></select>
-  <label for="">Payee:</label>
-  <input type="text" name="" class="transaction-form" value=""></>
-  <label for="">Outflow:</label>
-  <input type="text" name="" class="transaction-form" value=""></>
-  <label for="">Category:</label>
-  <input type="text" name="" class="transaction-form" value=""></>
-  <button class="action" type="button" name="button">Log Expense</button>
-</div>
 
+</div>
  <script type="text/javascript" src="main.js">
  </script>
 </body>
